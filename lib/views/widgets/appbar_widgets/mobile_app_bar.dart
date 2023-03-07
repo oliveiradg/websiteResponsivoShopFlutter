@@ -7,7 +7,16 @@ class MobileAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.black,
-      title: const Text('Shop Flutter'),
+      centerTitle: true,
+      
+      title: Row(
+        children: const [
+                 Icon(Icons.flutter_dash_outlined),
+         SizedBox(width: 4,),
+          Text('Aprenda Flutter'),
+          
+        ],
+      ),
       actions: <Widget>[
         IconButton(
           icon: const Icon(Icons.shopping_cart),

@@ -18,7 +18,7 @@ class HomePageView extends StatelessWidget {
                 child: MobileAppBar(),
               )
             : PreferredSize(child: WebAppBar(), preferredSize: Size(double.infinity, 72),),
-            drawer: Drawer(),
+            drawer: constraints.maxWidth < 800  ? Drawer() : null,
       );
     });
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:shop_flutter/views/widgets/appbar_widgets/web_app_bar_responsive.dart';
 
 class WebAppBar extends StatelessWidget {
@@ -11,7 +12,9 @@ class WebAppBar extends StatelessWidget {
       toolbarHeight: 72,
       title: Row(
         children: [
-          const Text('Shop Flutter'),
+         const Icon(Icons.flutter_dash_outlined),
+         const SizedBox(width: 4,),
+          const Text('Aprenda Flutter'),
           const SizedBox(
             width: 32,
           ),
