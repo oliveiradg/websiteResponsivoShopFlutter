@@ -17,8 +17,22 @@ class HomePageView extends StatelessWidget {
                 preferredSize: Size(double.infinity, 56),
                 child: MobileAppBar(),
               )
-            : PreferredSize(child: WebAppBar(), preferredSize: Size(double.infinity, 72),),
+            : PreferredSize(preferredSize: Size(double.infinity, 72),child: WebAppBar(),),
             drawer: constraints.maxWidth < 800  ? Drawer() : null,
+            body: Align(
+              alignment: Alignment.topCenter,
+              child: ConstrainedBox(
+                constraints: BoxConstraints(maxWidth: 1400),
+                
+                
+                
+                child: Container()),
+            ),
+
+
+
+
+
       );
     });
   }
