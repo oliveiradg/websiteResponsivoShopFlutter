@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:shop_flutter/views/widgets/appbar_widgets/mobile_app_bar.dart';
 import 'package:shop_flutter/views/widgets/appbar_widgets/web_app_bar.dart.dart';
+import 'package:shop_flutter/views/widgets/sections/top_section.dart';
 
 class HomePageView extends StatelessWidget {
   const HomePageView({Key? key}) : super(key: key);
@@ -18,15 +19,24 @@ class HomePageView extends StatelessWidget {
                 child: MobileAppBar(),
               )
             : PreferredSize(preferredSize: Size(double.infinity, 72),child: WebAppBar(),),
-            drawer: constraints.maxWidth < 800  ? Drawer() : null,
+            drawer: constraints.maxWidth < 1400  ? Drawer() : null,
             body: Align(
               alignment: Alignment.topCenter,
               child: ConstrainedBox(
-                constraints: BoxConstraints(maxWidth: 1400),
+                constraints: BoxConstraints(maxWidth: 1200),
                 
                 
                 
-                child: Container()),
+                child:ListView(
+                  children:  [
+                    TopSection(),
+
+                  ],
+
+
+
+                  
+                ),),
             ),
 
 
