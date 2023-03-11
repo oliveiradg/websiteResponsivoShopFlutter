@@ -1,16 +1,13 @@
 # shop_flutter
 
-A new Flutter project.
+#Responsividade no Flutter | Mobile, Tablet, Web e Desktop
 
-## Getting Started
+####Utilizando técnicas que permitirão que o Aplicativo Flutter tenha um comportamento incrível em diversos tamanhos de tela.
 
-This project is a starting point for a Flutter application.
+Entendendo o que é Responsividade e os Conceitos Básicos relacionados, como Pixel, Densidade de Pixel, Pixel Lógico e outros;
 
-A few resources to get you started if this is your first Flutter project:
+Aprendendo e utilizando um conjunto de +20 Widgets do Flutter que ajudam a atingir Responsividade;
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Aprendendo como funciona o mecanismo de Constraints do Flutter;
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Criando 2 Interfaces Responsivas (baseados em sites famosos).
