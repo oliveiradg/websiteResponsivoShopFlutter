@@ -13,6 +13,7 @@ class HomePageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
+        backgroundColor: Colors.black,
         appBar: constraints.maxWidth < 800
             ? PreferredSize(
                 preferredSize: Size(double.infinity, 56),
@@ -28,7 +29,7 @@ class HomePageView extends StatelessWidget {
                 
                 
                 child:ListView(
-                  children:  [
+                  children: const  [
                     TopSection(),
 
                   ],

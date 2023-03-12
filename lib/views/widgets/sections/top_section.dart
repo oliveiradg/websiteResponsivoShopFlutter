@@ -130,7 +130,43 @@ class TopSection extends StatelessWidget {
              
 
       
-      return Container();
+      return Column(
+        children:  [
+          AspectRatio(
+            aspectRatio: 3.4,
+            child:   Image.network('https://www.apexon.com/wp-content/uploads/2022/09/flutter-3-1.png',
+        fit: BoxFit.cover,
+            
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: const [
+                Text('Aprenda Flutter 3.0 com o melhor do mercado. ',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+                 SizedBox(height: 8,),
+                Text('Bora aprender Flutter por apenas R\$22,90! ',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+                 SizedBox(height: 16,),
+                 CustomSearch(),
+
+              ],
+            ),),
+         
+
+        ],
+      );
     }));
   }
 }
