@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:shop_flutter/views/widgets/appbar_widgets/mobile_app_bar.dart';
 import 'package:shop_flutter/views/widgets/appbar_widgets/web_app_bar.dart.dart';
+import 'package:shop_flutter/views/widgets/sections/advantages_section.dart';
 import 'package:shop_flutter/views/widgets/sections/top_section.dart';
 
 class HomePageView extends StatelessWidget {
@@ -31,6 +32,7 @@ class HomePageView extends StatelessWidget {
                 child:ListView(
                   children: const  [
                     TopSection(),
+                    AdvantagesSection(),
 
                   ],
 
