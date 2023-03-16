@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:shop_flutter/views/widgets/appbar_widgets/courses_sections.dart';
 
 import 'package:shop_flutter/views/widgets/appbar_widgets/mobile_app_bar.dart';
 import 'package:shop_flutter/views/widgets/appbar_widgets/web_app_bar.dart.dart';
@@ -33,6 +34,7 @@ class HomePageView extends StatelessWidget {
                   children: const  [
                     TopSection(),
                     AdvantagesSection(),
+                    CoursesSections(),
 
                   ],
 
