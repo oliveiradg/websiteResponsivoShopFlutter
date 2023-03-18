@@ -1,11 +1,12 @@
 
 import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/views/home_page_view.dart';
 
 void main() => runApp(
   DevicePreview(
-    enabled: false,
+    enabled: !kReleaseMode,
     builder: (context) => const MyApp(), // Wrap your app
   ),
 );
