@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:shop_flutter/views/widgets/cousers_item.dart';
 
 class CoursesSections extends StatelessWidget {
   const CoursesSections({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class CoursesSections extends StatelessWidget {
           shrinkWrap: true,
           itemCount: 20,
           itemBuilder: (context, index) {
-            return Container(color: Colors.red,);
+            return const CousersItem();
           },
         
       );
